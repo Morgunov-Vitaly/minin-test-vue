@@ -7,24 +7,19 @@
             <router-link 
                 tag="li"
                 to="/"
-                exact 
-                active-class="active">
-                <a href="#">Create</a>
-            </router-link>
+                exact
+                class='link' 
+            >Create</router-link>
             <router-link
                 tag="li"
-                to="/List"
-                exact
-                 active-class="active">
-                <a href="/List">List</a>
-            </router-link>
+                to="/list"
+                class='link' 
+            >List</router-link>
             <router-link
                 tag="li"
-                to="/link3"
-                exact
-                 active-class="active">
-                <a href="/link3">Link 3</a>
-            </router-link>
+                to="/task/id"
+                class='link' 
+            >Task</router-link>
           
         </ul>
       </div>
@@ -42,5 +37,9 @@ export default {
     padding: 0;
     max-width: 70%;
     margin: auto;
+}
+.link{
+    padding: 0 20px;
+    cursor: pointer;
 }
 </style>
